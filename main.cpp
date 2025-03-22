@@ -57,7 +57,7 @@ bool reverseLexicographicalCompare(uint32_t a, uint32_t b) {
     return a > b;
 }
 
-std::ostream& operator<<(std::ostream& out, std::deque<uint32_t> result) {
+std::ostream& operator<<(std::ostream& out, std::deque<uint32_t>& result) {
     for (auto ip : result) {
         out << parseUint32Ip(ip) << std::endl;
     }
